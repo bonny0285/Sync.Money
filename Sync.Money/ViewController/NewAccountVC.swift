@@ -18,7 +18,9 @@ class NewAccountVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
     @IBOutlet weak var scrollViewController: UIScrollView!
     
     @IBOutlet weak var viewScrollContainer: UIView!
-        
+    @IBOutlet weak var totAmountLbl: UILabel!
+    
+    @IBOutlet weak var avilableTotLbl: UILabel!
     
     
     override func viewDidLoad() {
@@ -28,6 +30,18 @@ class NewAccountVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
         
         accountCollectionView.delegate = self
         accountCollectionView.dataSource = self
+        
+        // Scroll Horizontal for bankCollectionView
+        if let layout = bankCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+        }
+        // Scroll Horizontal for accountCollectionView
+        if let layout = accountCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+        }
+        
+        totAmountLbl.text = "\(DataService.instance.getTotalAmount().twoDecimalNumbers(place: 2).delimiter)"
+        avilableTotLbl.text = "\(DataService.instance.getTotalAvailableAmount().twoDecimalNumbers(place: 2).delimiter)"
         
     }
     
