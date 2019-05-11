@@ -26,3 +26,17 @@ struct Bank{
         self.overdraft = overdraft
     }
 }
+
+
+
+    struct Account {
+        private(set) var totMoney: Double
+        private(set) var availableMoney: Double
+        
+        init (totMoney: Double, availableMoney: Double){
+            self.totMoney = totMoney
+            self.availableMoney = availableMoney
+        }
+        
+    }
+
