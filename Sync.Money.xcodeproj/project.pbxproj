@@ -13,6 +13,13 @@
 		B409F2102285EC8B00F96660 /* Sync_Money.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B409F20E2285EC8B00F96660 /* Sync_Money.xcdatamodeld */; };
 		B409F2122285EC8C00F96660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B409F2112285EC8C00F96660 /* Assets.xcassets */; };
 		B409F2152285EC8C00F96660 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B409F2132285EC8C00F96660 /* LaunchScreen.storyboard */; };
+		B409F21F228616EC00F96660 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409F21E228616EC00F96660 /* AccountCell.swift */; };
+		B409F22322862A7E00F96660 /* BankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409F22222862A7E00F96660 /* BankCell.swift */; };
+		B409F22622862AA700F96660 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409F22522862AA700F96660 /* Identifier.swift */; };
+		B409F2282286332300F96660 /* AddNewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409F2272286332300F96660 /* AddNewAccount.swift */; };
+		B409F22A2286DF9800F96660 /* NewAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409F2292286DF9800F96660 /* NewAccountVC.swift */; };
+		B409F22C2287150300F96660 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409F22B2287150300F96660 /* Structure.swift */; };
+		B409F22E2287175500F96660 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409F22D2287175500F96660 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		B409F2112285EC8C00F96660 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B409F2142285EC8C00F96660 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B409F2162285EC8C00F96660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B409F21E228616EC00F96660 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		B409F22222862A7E00F96660 /* BankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCell.swift; sourceTree = "<group>"; };
+		B409F22522862AA700F96660 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		B409F2272286332300F96660 /* AddNewAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAccount.swift; sourceTree = "<group>"; };
+		B409F2292286DF9800F96660 /* NewAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountVC.swift; sourceTree = "<group>"; };
+		B409F22B2287150300F96660 /* Structure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
+		B409F22D2287175500F96660 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +70,10 @@
 		B409F2062285EC8B00F96660 /* Sync.Money */ = {
 			isa = PBXGroup;
 			children = (
+				B409F22422862A9300F96660 /* Extra */,
+				B409F21D228616B100F96660 /* Views */,
+				B409F21C2286169300F96660 /* ViewController */,
 				B409F2072285EC8B00F96660 /* AppDelegate.swift */,
-				B409F2092285EC8B00F96660 /* AccountVC.swift */,
 				B409F20B2285EC8B00F96660 /* Main.storyboard */,
 				B409F2112285EC8C00F96660 /* Assets.xcassets */,
 				B409F2132285EC8C00F96660 /* LaunchScreen.storyboard */,
@@ -65,6 +81,35 @@
 				B409F20E2285EC8B00F96660 /* Sync_Money.xcdatamodeld */,
 			);
 			path = Sync.Money;
+			sourceTree = "<group>";
+		};
+		B409F21C2286169300F96660 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B409F2092285EC8B00F96660 /* AccountVC.swift */,
+				B409F2292286DF9800F96660 /* NewAccountVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B409F21D228616B100F96660 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B409F21E228616EC00F96660 /* AccountCell.swift */,
+				B409F22222862A7E00F96660 /* BankCell.swift */,
+				B409F2272286332300F96660 /* AddNewAccount.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B409F22422862A9300F96660 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				B409F22522862AA700F96660 /* Identifier.swift */,
+				B409F22B2287150300F96660 /* Structure.swift */,
+				B409F22D2287175500F96660 /* DataService.swift */,
+			);
+			path = Extra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +184,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B409F20A2285EC8B00F96660 /* AccountVC.swift in Sources */,
+				B409F22322862A7E00F96660 /* BankCell.swift in Sources */,
+				B409F22C2287150300F96660 /* Structure.swift in Sources */,
+				B409F22622862AA700F96660 /* Identifier.swift in Sources */,
+				B409F21F228616EC00F96660 /* AccountCell.swift in Sources */,
+				B409F2282286332300F96660 /* AddNewAccount.swift in Sources */,
+				B409F22A2286DF9800F96660 /* NewAccountVC.swift in Sources */,
 				B409F2102285EC8B00F96660 /* Sync_Money.xcdatamodeld in Sources */,
 				B409F2082285EC8B00F96660 /* AppDelegate.swift in Sources */,
+				B409F22E2287175500F96660 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYHT7H6MRT;
 				INFOPLIST_FILE = Sync.Money/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYHT7H6MRT;
 				INFOPLIST_FILE = Sync.Money/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
