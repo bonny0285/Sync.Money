@@ -26,8 +26,8 @@ class AccountCell: UICollectionViewCell {
     
     
     func initAccountCell (account: Account){
-        self.totMoneyLbl.text = "\(account.totMoney)"
-        self.avilableMoneyAccLbl.text = "\(account.availableMoney)"
+        self.totMoneyLbl.text = "\(account.totMoney.twoDecimalNumbers(place: 2).delimiter)"
+        self.avilableMoneyAccLbl.text = "\(account.availableMoney.twoDecimalNumbers(place: 2).delimiter)"
     }
     
 }

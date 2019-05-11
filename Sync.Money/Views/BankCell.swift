@@ -35,8 +35,8 @@ class BankCell: UICollectionViewCell {
         self.bankImage.image = bank.bankImage
         self.bankAccountNumberLbl.text = "\(bank.accountNumber)"
         self.sortCodeNumberLbl.text = bank.sortCodeNumber
-        self.moneyAccountLbl.text = "\(bank.money)"
-        self.availableMoneyLbl.text = "\(bank.availableMoney)"
-        self.overdraftMoneyLbl.text = "\(bank.overdraft)"
+        self.moneyAccountLbl.text = "\(bank.money.twoDecimalNumbers(place: 2).delimiter)"
+        self.availableMoneyLbl.text = "\(bank.availableMoney.twoDecimalNumbers(place: 2).delimiter)"
+        self.overdraftMoneyLbl.text = "\(bank.overdraft.twoDecimalNumbers(place: 2).delimiter)"
     }
 }

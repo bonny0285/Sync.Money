@@ -20,6 +20,7 @@
 		B409F22A2286DF9800F96660 /* NewAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409F2292286DF9800F96660 /* NewAccountVC.swift */; };
 		B409F22C2287150300F96660 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409F22B2287150300F96660 /* Structure.swift */; };
 		B409F22E2287175500F96660 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409F22D2287175500F96660 /* DataService.swift */; };
+		B409F23022873FF300F96660 /* DoubleExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B409F22F22873FF300F96660 /* DoubleExtentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B409F2292286DF9800F96660 /* NewAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountVC.swift; sourceTree = "<group>"; };
 		B409F22B2287150300F96660 /* Structure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
 		B409F22D2287175500F96660 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B409F22F22873FF300F96660 /* DoubleExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				B409F22522862AA700F96660 /* Identifier.swift */,
 				B409F22B2287150300F96660 /* Structure.swift */,
 				B409F22D2287175500F96660 /* DataService.swift */,
+				B409F22F22873FF300F96660 /* DoubleExtentions.swift */,
 			);
 			path = Extra;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				B409F2282286332300F96660 /* AddNewAccount.swift in Sources */,
 				B409F22A2286DF9800F96660 /* NewAccountVC.swift in Sources */,
 				B409F2102285EC8B00F96660 /* Sync_Money.xcdatamodeld in Sources */,
+				B409F23022873FF300F96660 /* DoubleExtentions.swift in Sources */,
 				B409F2082285EC8B00F96660 /* AppDelegate.swift in Sources */,
 				B409F22E2287175500F96660 /* DataService.swift in Sources */,
 			);
