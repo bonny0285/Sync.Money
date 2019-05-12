@@ -10,8 +10,9 @@ import UIKit
 
 class AccountCell: UICollectionViewCell {
     
-    @IBOutlet weak var totMoneyLbl: UILabel!
     
+    
+    @IBOutlet weak var totMoneyLbl: UILabel!
     @IBOutlet weak var avilableMoneyAccLbl: UILabel!
     
     

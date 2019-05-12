@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+//Decide how many decimal place you need
 extension Double {
     func twoDecimalNumbers(place: Int) -> Double{
         let divisor = pow(10.0, Double(place))
@@ -16,7 +16,7 @@ extension Double {
     }
 }
 
-
+//Insert comma after three numbers
 extension Double {
     private static var numberFormatter: NumberFormatter = {
         let numberFormatter = NumberFormatter()

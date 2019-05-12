@@ -14,41 +14,57 @@ class NewAccountVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
     
     @IBOutlet weak var bankCollectionView: UICollectionView!
     @IBOutlet weak var accountCollectionView: UICollectionView!
-    
     @IBOutlet weak var scrollViewController: UIScrollView!
-    
     @IBOutlet weak var viewScrollContainer: UIView!
     @IBOutlet weak var totAmountLbl: UILabel!
-    
     @IBOutlet weak var avilableTotLbl: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         bankCollectionView.delegate = self
         bankCollectionView.dataSource = self
-        
         accountCollectionView.delegate = self
         accountCollectionView.dataSource = self
         
+        scrollHorizontalBankCollectionView()
+        scrollHorizontalAccontCollectionView()
+       
+        
+        setTotalAmountLbl()
+        setTotalAvailableLbl()
+    }
+    
+    
+    
+    
+    func setTotalAmountLbl(){
+        totAmountLbl.text = "\(DataService.instance.getTotalAmount().twoDecimalNumbers(place: 2).delimiter)"
+    }
+    
+    
+    
+    func setTotalAvailableLbl(){
+        avilableTotLbl.text = "\(DataService.instance.getTotalAvailableAmount().twoDecimalNumbers(place: 2).delimiter)"
+    }
+
+    
+    func scrollHorizontalBankCollectionView(){
         // Scroll Horizontal for bankCollectionView
         if let layout = bankCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
         }
+    }
+    
+    
+    func scrollHorizontalAccontCollectionView(){
         // Scroll Horizontal for accountCollectionView
         if let layout = accountCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
         }
-        
-        totAmountLbl.text = "\(DataService.instance.getTotalAmount().twoDecimalNumbers(place: 2).delimiter)"
-        avilableTotLbl.text = "\(DataService.instance.getTotalAvailableAmount().twoDecimalNumbers(place: 2).delimiter)"
-        
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-     
-    }
-
     
     
     
@@ -58,6 +74,8 @@ class NewAccountVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
         }
         return DataService.instance.getBankAccounts().count
     }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -73,5 +91,7 @@ class NewAccountVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
             return cellB!
         }
     }
+    
+    
 
 }

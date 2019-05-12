@@ -9,12 +9,14 @@
 import UIKit
 
 struct Bank{
+    
     private(set) var bankImage: UIImage
     private(set) var money: Double
     private(set) var accountNumber: Int
     private(set) var sortCodeNumber: String
     private(set) var availableMoney: Double
     private(set) var overdraft: Double
+    
     
     init(bankImage: UIImage, money: Double,accountNumber: Int, sortCodeNumber : String, availableMoney: Double
         , overdraft: Double) {
@@ -25,13 +27,16 @@ struct Bank{
         self.availableMoney = availableMoney
         self.overdraft = overdraft
     }
+    
 }
 
 
 
     struct Account {
+        
         private(set) var totMoney: Double
         private(set) var availableMoney: Double
+        
         
         init (totMoney: Double, availableMoney: Double){
             self.totMoney = totMoney

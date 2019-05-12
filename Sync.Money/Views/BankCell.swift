@@ -10,15 +10,13 @@ import UIKit
 
 class BankCell: UICollectionViewCell {
     
-    @IBOutlet weak var bankImage: UIImageView!
     
+    
+    @IBOutlet weak var bankImage: UIImageView!
     @IBOutlet weak var bankAccountNumberLbl: UILabel!
     @IBOutlet weak var sortCodeNumberLbl: UILabel!
-    
     @IBOutlet weak var moneyAccountLbl: UILabel!
-    
     @IBOutlet weak var availableMoneyLbl: UILabel!
-    
     @IBOutlet weak var overdraftMoneyLbl: UILabel!
     
     

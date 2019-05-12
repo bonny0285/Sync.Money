@@ -9,11 +9,11 @@
 import UIKit
 
 class AddNewAccount: UIButton {
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
         layer.cornerRadius = 20.5
-        
     }
 
 }

@@ -9,10 +9,14 @@
 import UIKit
 
 class DataService{
+    
+    
     static let instance = DataService()
     private(set) var tot = 0.0
     private(set) var totAvg = 0.0
     var i = 0
+    
+    
     
     private let bankAccount = [
         Bank(bankImage: #imageLiteral(resourceName: "Lloyds_Bank"), money: 6725.14, accountNumber: 78128321, sortCodeNumber: "44-62-11", availableMoney: 6494.02, overdraft: 2500.00),
@@ -22,31 +26,43 @@ class DataService{
         Bank(bankImage: #imageLiteral(resourceName: "NW_logo_still"), money: 55.47, accountNumber: 17021985, sortCodeNumber: "17-02-85", availableMoney: 10000.88, overdraft: 1000.00)
     ]
     
+    
+    //Get all your Bank Accont
     func getBankAccounts() ->[Bank]{
         return bankAccount
     }
 
+    
+    
     private let yourAccount = [
         Account(totMoney: 6725.21, availableMoney: 6712.80),
-      //  Account(totMoney: 6725.21, availableMoney: 6712.80),
-      //  Account(totMoney: 6725.21, availableMoney: 6712.80),
-      // Account(totMoney: 6725.21, availableMoney: 6712.80),
+      //Account(totMoney: 6725.21, availableMoney: 6712.80),
+      //Account(totMoney: 6725.21, availableMoney: 6712.80),
+      //Account(totMoney: 6725.21, availableMoney: 6712.80),
     ]
     
+    
+    //Get all your accounts
     func getYourAccount() -> [Account]{
         return yourAccount
     }
     
     
+    
+    
+    //Get your Total amount
     func getTotalAmount() -> Double{
         for x in bankAccount {
             tot += x.money
             i += 1
-            print("totale \(tot)")
         }
         return tot
     }
     
+    
+    
+    
+    //Get your available money
     func getTotalAvailableAmount() -> Double{
         for x in bankAccount{
             totAvg += x.availableMoney
@@ -55,4 +71,6 @@ class DataService{
         }
         return totAvg
     }
+    
+    
 }

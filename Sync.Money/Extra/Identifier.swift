@@ -8,6 +8,8 @@
 
 import Foundation
 
-
+//accountCell identifier
 let ACCOUNT_CELL = "accountCell"
+
+//bankAccount identifier
 let BANK_CELL = "bankCell"
