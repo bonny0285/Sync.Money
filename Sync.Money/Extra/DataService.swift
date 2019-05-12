@@ -67,7 +67,6 @@ class DataService{
         for x in bankAccount{
             totAvg += x.availableMoney
             i += 1
-            print("tale available\(tot)")
         }
         return totAvg
     }

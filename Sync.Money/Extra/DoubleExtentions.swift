@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 //Decide how many decimal place you need
 extension Double {
     func twoDecimalNumbers(place: Int) -> Double{
